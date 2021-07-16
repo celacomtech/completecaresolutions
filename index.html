@@ -23,40 +23,47 @@
     <link rel="mask-icon" href="img/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
-
+<style>
+    .navbar-toggler-icon {
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+    }
+</style>
 </head>
 <body>
     <!-- Responsive navbar-->
-    <nav class="navbar navbar-expand-lg navbar bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container px-5">
-            <img height="55" src="img/pinkFlamingo.png" />
-            <a class="navbar-brand text-dark" href="#!" style=""><b>Complete Care Solutions</b></a>
+            <a href="index.html" class="d-none d-lg-block"><img height="55" src="img/pinkFlamingo.png" /></a>
+            <a href="index.html" class="d-lg-none d-md-none d-sm-block"><img height="25" src="img/pinkFlamingo.png" /></a>
+
+            <a class="navbar-brand text-dark d-none d-lg-block" href="index.html" style=""><b>Complete Care Solutions</b></a>
+            <a class="navbar-brand text-dark  d-sm-block d-md-none fs-6" href="index.html" style=""><small>Complete Care Solutions</small></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="collapse navbar-collapse bg-light" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                    <li class="nav-item"><a class="nav-link text-white active btn btn-primary btn-lg btn-block" aria-current="page" href="index.html"><b>Home</b></a></li>
-                    <li class="nav-item"><a class="nav-link text-dark btn-outline-primary btn-lg btn" href="community.html"><b>Community</b></a></li>
-                    <li class="nav-item"><a class="nav-link text-dark btn-outline-primary btn-lg btn" href="products.html"><b>Products</b></a></li>
-                    <li class="nav-item"><a class="nav-link text-dark btn-outline-primary btn-lg btn" href="contact.html"><b>Contact Us</b></a></li>
+                    <li class="nav-item"><a class="nav-link text-white active btn btn-primary btn-sm btn-block" aria-current="page" href="index.html"><b>Home</b></a></li>
+                    <li class="nav-item"><a class="nav-link text-dark  btn-sm btn" href="community.html"><b>Community</b></a></li>
+                    <li class="nav-item"><a class="nav-link text-dark  btn-sm btn" href="products.html"><b>Products</b></a></li>
+                    <li class="nav-item"><a class="nav-link text-dark  btn-sm btn" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><b>Contact Us</b></a></li>
                 </ul>
                 <!--<button  type="button"class="btn-primary btn-lg"data-toggle="modal" data-target="#mailingListModal">Join Our Mailing List</button>-->
                 <!--<form action="https://Celacomtechnologies.us7.list-manage.com/subscribe/post?u=31960af5eee17a0b38fd79468&amp;id=ad22d9bb5a" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-                        <div id="mc_embed_signup_scroll" class="form-row">
+                    <div id="mc_embed_signup_scroll" class="form-row">
 
-                            <div class="mc-field-group col-12 col-md-7 mb-2 mb-md-0">
-                                <input type="email" value="" name="EMAIL" class="required email form-control form-control-lg" placeholder="Enter your email..." id="mce-EMAIL">
-                            </div>
-                            <div class="col-12 col-md-5">
-                                <input type="submit" value="Join Our Mailing List!" name="subscribe" id="mc-embedded-subscribe" class="button btn-block btn-lg btn-primary" style="background-color:#213262">
-                            </div>
+                        <div class="mc-field-group col-12 col-md-7 mb-2 mb-md-0">
+                            <input type="email" value="" name="EMAIL" class="required email form-control form-control-lg" placeholder="Enter your email..." id="mce-EMAIL">
                         </div>
-                        <div id="mce-responses" class="clear">
-                            <div class="response" id="mce-error-response" style="display:none"></div>
-                            <div class="response" id="mce-success-response" style="display:none"></div>
+                        <div class="col-12 col-md-5">
+                            <input type="submit" value="Join Our Mailing List!" name="subscribe" id="mc-embedded-subscribe" class="button btn-block btn-lg btn-primary" style="background-color:#213262">
                         </div>
-                        <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_31960af5eee17a0b38fd79468_ad22d9bb5a" tabindex="-1" value=""></div>
+                    </div>
+                    <div id="mce-responses" class="clear">
+                        <div class="response" id="mce-error-response" style="display:none"></div>
+                        <div class="response" id="mce-success-response" style="display:none"></div>
+                    </div>
+                    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_31960af5eee17a0b38fd79468_ad22d9bb5a" tabindex="-1" value=""></div>
 
-                    </form>-->
+                </form>-->
 
             </div>
         </div>
@@ -78,10 +85,54 @@
             </div>
         </div>
     </header>-->
+    <!-- Modal -->
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">Contact Us</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="contact-box center-version">
+                                <a href="#profile.html">
+                                    <img alt="image" class="img-circle" src="https://bootdey.com/img/Content/avatar/avatar3.png">
+                                    <h3 class="m-b-xs"><strong>Demetras Douglas</strong></h3>
+
+                                    <div class="font-bold">Owner</div>
+                                    <address class="m-t-md">
+                                        <strong>Complete Care Solutions</strong><br>
+                                        795 Folsom Ave, Suite 600<br>
+                                        San Francisco, CA 94107<br>
+                                        <abbr title="Phone">P:</abbr> (123) 456-7890
+                                    </address>
+
+                                </a>
+                                <div class="contact-box-footer">
+                                    <div class="m-t-xs btn-group">
+                                        <a class="btn btn-xs btn-white"href=""><i class="fa fa-phone"></i> Call </a>
+                                        <a class="btn btn-xs btn-white"href=""><i class="fa fa-envelope"></i> Email</a>
+                                        <a class="btn btn-xs btn-white"href="https://www.twitter.com/Eliteflamingocc" target="_blank"><i class="fa fa-user-plus"></i> Follow</a>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <!--<button type="button" class="btn btn-primary">Understood</button>-->
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- Features section-->
-    <section class="py-5 border-bottom" id="features">
-        <div class="container px-5 my-5">
-            <div class="text-center mb-5">
+    <section class="py-5 border-bottom d-none d-lg-block" id="features" style="padding:0">
+        <div class="container px-5 my-5" style="padding:0">
+            <div class="text-center mb-5" style="padding:0">
                 <h4 class="">We work with "A" rated insurance carriers and have access to an array of insurance products and services. </h4>
                 <!--<p class="lead mb-0">How much coverage do you need?</p>-->
             </div>
@@ -89,8 +140,8 @@
             <div class="row gx-5">
                 <div class="col-lg-4 mb-5 mb-lg-0">
                     <!--<div class="feature rounded-3 mb-3">
-            <img class="img-thumbnail" src="img/aig.png">
-            </div>-->
+                    <img class="img-thumbnail" src="img/aig.png">
+                    </div>-->
                     <h2 class="h4 fw-bolder">Mortgage Protection</h2>
                     <p>Mortgage Protection insurance can pay off the mortgage if you were to pass away...</p>
                     <!--<img height="125" src="img/AdobeStock_432711282_Preview.jpeg" /><br />-->
@@ -98,16 +149,16 @@
                 </div>
                 <div class="col-lg-4 mb-5 mb-lg-0">
                     <!--<div class="feature bg-primary bg-gradient text-white rounded-3 mb-3">
-            <i class="bi bi-building"></i>
-            </div>-->
+                    <i class="bi bi-building"></i>
+                    </div>-->
                     <h2 class="h4 fw-bolder">FINAL EXPENSE</h2>
                     <p>Final Expense insurance is designed to cover the expenses that your loved ones will be faced with after your death... </p>
                     <a class="text-decoration-none" href="products.html">Learn More <i class="bi bi-arrow-right"></i></a>
                 </div>
                 <div class="col-lg-4">
                     <!--<div class="feature bg-primary bg-gradient text-white rounded-3 mb-3">
-            <i class="bi bi-toggles2"></i>
-            </div>-->
+                    <i class="bi bi-toggles2"></i>
+                    </div>-->
                     <h2 class="h4 fw-bolder">MEDICARE SUPPLEMENT</h2>
                     <p>You may also qualify for  the Medicare Saving Program which is a program that helps Medicare beneficiaries pay their part B Medicare premiums and save on prescription drugs... </p>
                     <a class="text-decoration-none" href="poducts.html">Learn More <i class="bi bi-arrow-right"></i></a>
@@ -116,7 +167,7 @@
         </div>
     </section>
     <section class="bg-light py-5 border-bottom">
-        <div class="container px-5 my-5">
+        <div class="container">
             <div class="text-center mb-5">
                 <h2 class="fw-bolder">How We Can Help You</h2>
                 <p class="lead mb-0">Just answer these simple questions</p>
@@ -127,18 +178,18 @@
                 <section>
                     <div class="row">
                         <div class="col-md-8 mb-4">
-                            <div class="card mb-4">
+                            <div class="card mb-4 embed-responsive">
                                 <!--<div class="card-header py-3">
                                     <h5 class="mb-0">Tell us about your health</h5>
                                 </div>-->
-                                <!--<div class="card-body">-->
-                                    <iframe scrolling="auto"  height=1938 src="https://us6.list-manage.com/survey?u=11d101f834b2e87828d1c3466&id=08f4151220&attribution=false"></iframe>
+                                <!--<div class="card-body embed-responsive embed-responsive-16by9">-->
+                                <iframe class="embed-responsive-item" scrolling="auto" height="1938" src="https://us6.list-manage.com/survey?u=11d101f834b2e87828d1c3466&id=08f4151220&attribution=false"></iframe>
 
                                 <!--</div>-->
                             </div>
                         </div>
 
-                        <div class="col-md-4 mb-4">
+                        <div class="col-md-4 mb-4 d-none d-lg-block">
                             <div class="card mb-4">
                                 <!--<div class="card-header py-3">
                                     <h5 class="mb-0">Latest News</h5>
@@ -155,14 +206,28 @@
             </div>
         </div>
     </section>
-    <section class="border-bottom" id="carriers"style="padding:0;">
-        <div class="container px-5 my-5"style="padding:0;">
+    <section class="" id="mission" style="padding:0;">
+        <div class="container px-5 my-5" style="padding:0;">
+            <div class="text-center mb-5">
+                <h4 class="fw-bolder">Mission Statement</h4>
+                <!--<p class="lead mb-0">How much coverage do you need?</p>-->
+            </div>
+
+            <div class="row gx-5" style="padding:0;">
+                <p>
+                    Our goal is to achieve long term relationships focused on bring Value to each client and the community. We are DEVOTED  to helping mange the rick that arise in everyday life.
+                </p>
+            </div>
+        </div>
+    </section>
+    <section class="border-bottom d-none d-lg-block" id="carriers" style="padding:0;">
+        <div class="container px-5 my-5" style="padding:0;">
             <div class="text-center mb-5">
                 <h4 class="fw-bolder">SOME OF OUR PARTNERS</h4>
                 <!--<p class="lead mb-0">How much coverage do you need?</p>-->
             </div>
 
-            <div class="row gx-5"style="padding:0;">
+            <div class="row gx-5" style="padding:0;">
                 <!-- Carriers -->
                 <div class="col-lg-3 col-xl-2">
                     <div class="card mb-5 mb-xl-0" style="border:none">
@@ -189,7 +254,7 @@
                     </div>
                 </div>
                 <div class="col-lg-3 col-xl-2" title="Royal Neighbors">
-                    <div class="card mb-5 mb-xl-0"style="border:none">
+                    <div class="card mb-5 mb-xl-0" style="border:none">
                         <!--<div class="card-header"> American General Life</div>-->
                         <div class="card-body">
                             <img class="img-thumbnail" src="img/royalNeighbors.jpg" style="padding:0px;border:none" />
