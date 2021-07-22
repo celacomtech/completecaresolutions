@@ -65,6 +65,15 @@
                 color: rgba(238, 238, 238, 0.8);
                 font-weight: normal;
             }
+        .btn-check:checked + .btn-primary, .btn-check:active + .btn-primary, .btn-primary:active, .btn-primary.active, .show > .btn-primary.dropdown-toggle {
+            background-color: #f6992f;
+            border-color: #c9dc69;
+        }
+
+        a {
+            color: #69b8df;
+        }
+
     </style>
     <!-- Favicon-->
     <!--<link rel="icon" type="image/x-icon" href="assets/favicon.ico" />-->
@@ -83,22 +92,22 @@
     <!-- Responsive navbar-->
     <nav class="navbar navbar-expand-lg navbar">
         <div class="container px-5">
-           <a  href="index.html" ><img height="55" src="img/pinkFlamingo.png"/></a> 
+            <a href="index.html"><img height="55" src="img/pinkFlamingo.png" /></a>
             <a class="navbar-brand text-dark" href="index.html" style=""><b>Complete Care Solutions</b></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                    <li class="nav-item"><a class="nav-link text-dark btn-outline-primary btn-lg btn" href="index.html"><b>Home</b></a></li>
-                    <li class="nav-item"><a class="nav-link text-white active btn btn-primary btn-lg btn-block" aria-current="page" href="community.html"><b>Community</b></a></li>
-                    <li class="nav-item"><a class="nav-link text-dark btn-outline-primary btn-lg btn" href="products.html"><b>Products</b></a></li>
-                    <li class="nav-item"><a class="nav-link text-dark btn-outline-primary btn-lg btn" href="contact.html"><b>Contact Us</b></a></li>
+                    <li class="nav-item"><a class="nav-link text-dark  btn-sm btn" href="index.html"><b>Home</b></a></li>
+                    <li class="nav-item"><a class="nav-link text-white active btn btn-primary btn-sm btn-block" aria-current="page" href="community.html"><b>Community</b></a></li>
+                    <li class="nav-item"><a class="nav-link text-dark  btn-sm btn" href="products.html"><b>Products</b></a></li>
+                    <li class="nav-item"><a class="nav-link text-dark  btn-sm btn" href="contact.html"><b>Contact Us</b></a></li>
                 </ul>
             </div>
         </div>
     </nav>
     <!-- Header-->
     <section class="bg-light py-3">
-        <div class="container"style="padding-bottom:0px">
+        <div class="container" style="padding-bottom:0px">
             <div class="row">
                 <div class="container">
                     <blockquote class="quote-card">
@@ -154,7 +163,7 @@
         </div>
     </section>
     <!-- Footer-->
-    <footer class="py-5">
+    <footer class="py-5 bg-light" style="border-top:2px solid #f6992f;">
         <div class="m-0 text-center text-dark">
             <ul class="list-inline mb-0">
                 <!--<li class="list-inline-item mr-3">
@@ -163,17 +172,17 @@
                     </a>
                 </li>-->
                 <li class="list-inline-item mr-3">
-                    <a href="https://g.page/r/CTZZKVNMdz7dEBA" target="_blank">
+                    <a href="https://g.page/r/CTZZKVNMdz7dEBA" title="Review us on Google" target="_blank">
                         <i class="fab fa-google fa-2x fa-fw" style="color:#eba021"></i>
                     </a>
                 </li>
                 <li class="list-inline-item">
-                    <a href="https://www.facebook.com/eliteflamingoccs" target="_blank">
+                    <a href="https://www.facebook.com/eliteflamingoccs" title="Follow us on Facebook" target="_blank">
                         <i class="fab fa-facebook fa-2x fa-fw" style="color:#eba021"></i>
                     </a>
                 </li>
                 <li class="list-inline-item">
-                    <a href="https://www.twitter.com/Eliteflamingocc" target="_blank">
+                    <a href="https://www.twitter.com/Eliteflamingocc" title="Follow us on Twitter" target="_blank">
                         <i class="fab fa-twitter fa-2x fa-fw" style="color:#eba021"></i>
                     </a>
                 </li>
