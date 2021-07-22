@@ -27,6 +27,24 @@
     .navbar-toggler-icon {
         background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
     }
+    .banner {
+        background-image: url(img/AdobeStock_425754638_Preview.jpeg);
+        width: 100%;
+        height: 310px;
+        background-repeat: no-repeat;
+        position: relative;
+        background-position: center right;
+        display: block;
+        background-size: 100%;
+        border-bottom: 2px solid #f6992f;
+    }
+    .btn-check:checked + .btn-primary, .btn-check:active + .btn-primary, .btn-primary:active, .btn-primary.active, .show > .btn-primary.dropdown-toggle {
+        background-color: #f6992f;
+        border-color: #c9dc69;
+    }
+    a {
+        color:#69b8df;
+    }
 </style>
 </head>
 <body>
@@ -85,6 +103,8 @@
             </div>
         </div>
     </header>-->
+    <section class="banner  d-none d-lg-block">
+    </section>
     <!-- Modal -->
     <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
         <div class="modal-dialog">
@@ -130,12 +150,12 @@
         </div>
     </div>
     <!-- Features section-->
-    <section class="py-5 border-bottom d-none d-lg-block" id="features" style="padding:0">
-        <div class="container px-5 my-5" style="padding:0">
+    <section class="py-5 border-bottom d-none d-lg-block" id="features" style="padding-top:0;margin-top:0;margin-bottom:0">
+        <div class="container px-5 my-5" style="padding-top:0;margin-top:0;margin-bottom:0">
             <div class="text-center mb-5" style="padding:0">
-                <h3 class="">We work with "A" rated insurance carriers and have access to an array of insurance products and services. </h3>
+                <!--<h1 class="">We work with "A" rated insurance carriers and have access to an array of insurance products and services. </h1>-->
                 <!--<p class="lead mb-0">How much coverage do you need?</p>-->
-                <hr />
+                <!--<hr />-->
             </div>
 
             <div class="row gx-5">
@@ -180,13 +200,15 @@
                     <div class="row">
                         <div class="col-md-8 mb-4">
                             <div class="card mb-4 embed-responsive">
-                                <div class="text-center mb-5 bg-white vcard-header py-3">
-                                    <h2 class="fw-bolder">How We Can Help You</h2>
-                                    <hr />                                    <p class="lead mb-0">Just answer these simple questions.</p>
+                                <!--<div class="text-center mb-5 vcard-header py-3"style="background-color:#76b5d8">-->
+                                <div class="text-center mb-5 vcard-header py-3">
+                                    <h2 class="fw-bolder">How Can We Help You?</h2>
+                                    <hr />                                    
+                                    <p class="lead mb-0 bg-white">Just answer these simple questions.</p>
 
                                 </div>
                                 <!--<div class="card-body embed-responsive embed-responsive-16by9">-->
-                                <iframe class="embed-responsive-item" scrolling="auto" height="1938" src="https://us6.list-manage.com/survey?u=11d101f834b2e87828d1c3466&id=08f4151220&attribution=false"></iframe>
+                                <iframe class="embed-responsive-item" scrolling="auto" height="1938" src="https://us6.list-manage.com/survey?u=11d101f834b2e87828d1c3466&id=08f4151220&attribution=false"style="padding:0"></iframe>
 
                                 <!--</div>-->
                             </div>
@@ -209,10 +231,10 @@
             </div>
         </div>
     </section>
-    <section class="" id="mission" style="padding:0;">
+    <section class="" id="mission" style="padding:0;border-top:8px solid #69b8df;border-bottom:8px solid #69b8df">
         <div class="container px-5 my-5" style="padding:0;">
             <div class="text-center mb-5">
-                <h4 class="fw-bolder">Mission Statement</h4>
+                <h2 class="fw-bolder">Mission Statement</h2>
                 <!--<p class="lead mb-0">How much coverage do you need?</p>-->
             </div>
 
@@ -228,7 +250,7 @@
     <section class="border-bottom d-none d-lg-block" id="carriers" style="padding:0;">
         <div class="container px-5 my-5" style="padding:0;">
             <div class="text-center mb-5">
-                <h4 class="fw-bolder">SOME OF OUR PARTNERS</h4>
+                <h2 class="fw-bolder">SOME OF OUR PARTNERS</h2>
                 <!--<p class="lead mb-0">How much coverage do you need?</p>-->
             </div>
 
@@ -287,7 +309,7 @@
     </section>
 
     <!-- Footer-->
-    <footer class="py-5 bg-light">
+    <footer class="py-5 bg-light"style="border-top:2px solid #f6992f;">
         <div class="m-0 text-center text-dark">
             <ul class="list-inline mb-0">
                 <!--<li class="list-inline-item mr-3">
@@ -296,17 +318,17 @@
                     </a>
                 </li>-->
                 <li class="list-inline-item mr-3">
-                    <a href="https://g.page/r/CTZZKVNMdz7dEBA" target="_blank">
+                    <a href="https://g.page/r/CTZZKVNMdz7dEBA" title="Review us on Google"  target="_blank">
                         <i class="fab fa-google fa-2x fa-fw" style="color:#eba021"></i>
                     </a>
                 </li>
                 <li class="list-inline-item">
-                    <a href="https://www.facebook.com/eliteflamingoccs" target="_blank">
+                    <a href="https://www.facebook.com/eliteflamingoccs"title="Follow us on Facebook"  target="_blank">
                         <i class="fab fa-facebook fa-2x fa-fw" style="color:#eba021"></i>
                     </a>
                 </li>
                 <li class="list-inline-item">
-                    <a href="https://www.twitter.com/Eliteflamingocc" target="_blank">
+                    <a href="https://www.twitter.com/Eliteflamingocc"title="Follow us on Twitter" target="_blank">
                         <i class="fab fa-twitter fa-2x fa-fw" style="color:#eba021"></i>
                     </a>
                 </li>
