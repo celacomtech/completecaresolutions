@@ -33,21 +33,27 @@
             color: #69b8df;
         }
 
+        .navbar-toggler-icon {
+            background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+        }
     </style>
 </head>
 <body>
     <!-- Responsive navbar-->
-    <nav class="navbar navbar-expand-lg navbar bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container px-5">
-            <a href="index.html"><img height="55" src="img/pinkFlamingo.png" /></a>
-            <a class="navbar-brand text-dark" href="index.html" style=""><b>Complete Care Solutions</b></a>
+            <a href="index.html" class="d-none d-lg-block"><img height="55" src="img/pinkFlamingo.png" /></a>
+            <a href="index.html" class="d-lg-none d-md-none d-sm-block"><img height="25" src="img/pinkFlamingo.png" /></a>
+
+            <a class="navbar-brand text-dark d-none d-lg-block" href="index.html" style=""><b>Complete Care Solutions</b></a>
+            <a class="navbar-brand text-dark  d-sm-block d-md-none fs-6" href="index.html" style=""><small>Complete Care Solutions</small></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="collapse navbar-collapse bg-light" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                     <li class="nav-item"><a class="nav-link text-dark  btn-sm btn" href="index.html"><b>Home</b></a></li>
                     <li class="nav-item"><a class="nav-link text-dark  btn-sm btn" aria-current="page" href="community.html"><b>Community</b></a></li>
                     <li class="nav-item"><a class="nav-link text-white active btn btn-primary btn-sm btn-block" href="products.html"><b>Products</b></a></li>
-                    <li class="nav-item"><a class="nav-link text-dark  btn-sm btn" href="contact.html"><b>Contact Us</b></a></li>
+                    <li class="nav-item"><a class="nav-link text-dark  btn-sm btn" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><b>Contact Us</b></a></li>
                 </ul>
             </div>
         </div>
@@ -69,6 +75,51 @@
             </div>
         </div>
     </header>-->
+    <!-- Modal -->
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">Contact Us</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="text-center">
+                            <div class="contact-box center-version">
+                                <a href="#profile.html">
+                                    <img alt="image" class="img-circle" src="https://bootdey.com/img/Content/avatar/avatar3.png">
+                                    <h3 class="m-b-xs"><strong>Demetras Douglas</strong></h3>
+
+                                    <div class="font-bold">Owner</div>
+                                    <address class="m-t-md">
+                                        <strong>Complete Care Solutions</strong><br>
+                                        1304 Sunset Blvd, Suite 1183<br>
+                                        West Columbia, SC 29169<br>
+                                        <abbr type="phone" title="Phone">P:</abbr>+1 803 349 7131
+                                    </address>
+
+                                </a>
+                                <div class="contact-box-footer">
+                                    <div class="m-t-xs btn-group">
+                                        <a class="btn btn-xs btn-white" href="tel:+18033497131"><i class="fa fa-phone"></i> Call </a>
+                                        <a class="btn btn-xs btn-white" href="mailto:someone@example.com"><i class="fa fa-envelope"></i>Email</a>
+                                        <a class="btn btn-xs btn-white" href="https://www.twitter.com/Eliteflamingocc" target="_blank"><i class="fa fa-user-plus"></i> Follow</a>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <!--<button type="button" class="btn btn-primary">Understood</button>-->
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- Features section-->
     <section class="py-5 border-bottom" id="features">
         <div class="container px-5 my-5">
@@ -101,7 +152,7 @@
                     </div>-->
                     <h2 class="h4 fw-bolder">FINAL EXPENSE</h2>
                     <p>
-                        <img class="img-thumbnail" src="img/finalExpense.jpg">
+                        <img class="img-thumbnail" src="img/finalExpense.jpeg"><br />
                         Final Expense insurance is designed to cover the expenses that your loved ones will be faced with after your death. These costs include all aspects of your funeral expenses (viewing, burial, digging of plot, headstone, vault, etc.) or cremation (memorial, crematory process, urn, etc.). These policies are typically small whole life policies ranging no more than $50,000 and are proportionate to the expense for your desired funeral arrangements. No physical or blood work is required to attain a Final Expense whole life policy. Policies are issued same day.
                     </p>
                     <button class="btn btn-lg btn-outline-primary" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/eliteflamingoccs/15min?hide_event_type_details=1'});return false;">Schedule Consultation</button>
